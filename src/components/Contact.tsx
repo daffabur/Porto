@@ -19,7 +19,7 @@ export const Contact = () => {
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6 backdrop-blur-sm">
             <Sparkles className="w-4 h-4 text-yellow-300" />
-            <span className="text-sm font-medium text-gray-300">Let’s Connect</span>
+            <span className="text-sm font-medium text-gray-300">Let&apos;s Connect</span>
             <Sparkles className="w-4 h-4 text-yellow-300" />
           </div>
 
@@ -29,14 +29,14 @@ export const Contact = () => {
             </span>
           </h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Let's connect and discuss opportunities in <span className="text-blue-400 font-semibold">mobile development</span>, 
+            Let&apos;s connect and discuss opportunities in <span className="text-blue-400 font-semibold">mobile development</span>,
             <span className="text-purple-400 font-semibold"> data analysis</span>, or simply talk tech!
           </p>
         </div>
 
         {/* Contact Card */}
         <div className="max-w-2xl mx-auto">
-          <Card className="relative overflow-hidden border-2 border-white/10 bg-white/5 transition-shadow hover:shadow-2xl backdrop-blur-xl">
+          <Card className="relative overflow-hidden border-2 border-white/10 bg-white/5 transition-shadow hover:shadow-2xl backdrop-blur-xl group">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-20 transition-opacity" />
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
 
@@ -52,7 +52,7 @@ export const Contact = () => {
 
               <CardContent className="space-y-6 text-center">
                 <p className="text-muted-foreground text-gray-300">
-                  I'm always open to exciting opportunities, side projects, or just talking about tech and data.
+                  I&apos;m always open to exciting opportunities, side projects, or just talking about tech and data.
                 </p>
 
                 <div className="flex justify-center gap-4">

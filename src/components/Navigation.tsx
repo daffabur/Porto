@@ -17,13 +17,12 @@ export const Navigation = () => {
     { href: "#contact", label: "Contact" },
   ];
 
-  // Scroll event handling
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
 
-      const sections = navItems.map(item => item.href.substring(1));
-      const current = sections.find(section => {
+      const sections = navItems.map((item) => item.href.substring(1));
+      const current = sections.find((section) => {
         const el = document.getElementById(section);
         if (el) {
           const top = el.getBoundingClientRect().top;
@@ -57,7 +56,7 @@ export const Navigation = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="text-xl font-bold">
-            <span className="gradient-text">Daffa</span>
+            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Daffa</span>
             <span className="text-white ml-1">Burane</span>
           </div>
 
@@ -70,7 +69,7 @@ export const Navigation = () => {
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(id)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 animated-underline ${
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                     isActive
                       ? "text-blue-400 bg-blue-400/10"
                       : "text-gray-300 hover:text-white hover:bg-white/10"

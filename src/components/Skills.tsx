@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, Star, Sparkles } from "lucide-react";
+import { Code, Sparkles } from "lucide-react";
 
 export const Skills = () => {
   const skillCategories = [
@@ -51,19 +51,19 @@ export const Skills = () => {
   };
 
   return (
-    <section id="skills" className="py-24 bg-gradient-to-br from-gray-950 via-black to-gray-900 text-white relative overflow-hidden">
-      {/* Animated Backgrounds */}
+    <section
+      id="skills"
+      className="py-24 bg-gradient-to-br from-gray-950 via-black to-gray-900 text-white relative overflow-hidden"
+    >
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-green-400/10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-400/10 rounded-full blur-3xl animate-pulse delay-1000" />
         <div className="absolute top-3/4 left-1/2 w-80 h-80 bg-orange-400/10 rounded-full blur-3xl animate-pulse delay-2000" />
       </div>
 
-      {/* Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_100%)]" />
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6 backdrop-blur-sm">
             <Sparkles className="w-4 h-4 text-yellow-300" />
@@ -81,19 +81,15 @@ export const Skills = () => {
           </p>
         </div>
 
-        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
           {skillCategories.map((category, index) => (
             <div key={index} id={category.id ?? undefined}>
               <Card
-                className={`
-                  group relative overflow-hidden border-2 border-white/10 bg-white/5
-                  transition-transform duration-500 hover:-translate-y-2 hover:scale-[1.02] shadow-xl hover:shadow-2xl
-                `}
+                className="group relative overflow-hidden border-2 border-white/10 bg-white/5 transition-transform duration-500 hover:-translate-y-2 hover:scale-[1.02] shadow-xl hover:shadow-2xl"
               >
-                {/* Gradient Overlay */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${getColor(category.color)} opacity-0 group-hover:opacity-20 transition-all duration-500`} />
-                {/* Shine effect */}
+                <div
+                  className={`absolute inset-0 bg-gradient-to-br ${getColor(category.color)} opacity-0 group-hover:opacity-20 transition-all duration-500`}
+                />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
 
                 <div className="relative z-10">
@@ -107,7 +103,10 @@ export const Skills = () => {
                   <CardContent>
                     <ul className="space-y-2">
                       {category.skills.map((skill, idx) => (
-                        <li key={idx} className="px-3 py-2 text-sm rounded-md bg-white/10 text-gray-200 border border-white/10 hover:bg-white/20 transition-colors">
+                        <li
+                          key={idx}
+                          className="px-3 py-2 text-sm rounded-md bg-white/10 text-gray-200 border border-white/10 hover:bg-white/20 transition-colors"
+                        >
                           {skill}
                         </li>
                       ))}
