@@ -63,7 +63,7 @@ export const Hero = ({ projectCount, certificationCount }: HeroProps) => {
                 src="/images/pp.jpg"
                 alt="Daffa Burane"
                 loading="eager"
-                className="w-full h-full object-cover object-center rounded-full border-[4px] border-purple-500 shadow-xl"
+                className="w-full h-full object-cover object-[center_20%] rounded-full border-[4px] border-purple-500 shadow-xl"
               />
               <div className="absolute inset-0 rounded-full border-[5px] border-purple-500 animate-ping opacity-20 pointer-events-none"></div>
             </div>
